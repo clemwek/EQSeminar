@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-all duration-200 outline-none;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-r from-maroon-600 to-maroon-800 text-white hover:from-maroon-700 hover:to-maroon-900 shadow-lg;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-sm border border-gray-200 p-6;
+  }
+}
