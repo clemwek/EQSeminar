@@ -72,7 +72,7 @@ export default function AttendanceModal({ seminarId, seminarTitle, numberOfDays,
 
   const handleExport = async () => {
     try {
-      const response = await fetch(`http://127.0.0.1:4000/api/attendance/export?seminarId=${seminarId}`, {
+      const response = await fetch(`http://3.94.106.122:4000/api/attendance/export?seminarId=${seminarId}`, {
         headers: {
           'x-admin-token': localStorage.getItem('admin-token') || '',
         },
