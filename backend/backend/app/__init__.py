@@ -11,7 +11,7 @@ def create_app():
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     app.config['MAX_CONTENT_LENGTH'] = 50 * 1024 * 1024
 
-    CORS(app)
+    CORS(app, origins=['*'], supports_credentials=True)
 
     init_db(app)
 
